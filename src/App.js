@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <Header/>
       <ToDoInputs addToDo = {todo => setTodos([...todos, todo])}/>
-      <ToDoList todos={todos} delToDo = {index => setTodos(todos.splice(index,1))} />
+      <ToDoList todos={todos} delToDo = {item => setTodos([...item])} />
     </div>
   );
 }
