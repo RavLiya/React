@@ -6,6 +6,7 @@ export default function ToDoInputs (props) {
     const onSubmit = e => {
         e.preventDefault();
         props.addToDo(newItem);
+        // props.addTaskDetails({Task: '', Date: '', Priority: ''})
     };
     return(
         <>
