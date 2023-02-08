@@ -1,20 +1,17 @@
-import { useState } from "react";
 import Header from "./Components/Header/Header";
-import ToDoInputs from "./Components/ToDoInputs/ToDoInputs";
-import ToDoList from "./Components/ToDoList/ToDoList";
+import "./Components/Header/Header.css"
+import PostAdd from "./Components/PostAdd/PostAdd";
+import PostPublish from "./Components/PostPublish/PostPublish";
+import { useState } from "react";
 
-function App() {
-
-  const [todos, setTodos] = useState([]);
-  console.log(todos);
-
+function App() { 
+  const [posts, setPosts] = useState([]);
   return (
-    <div className="App">
+    <>
       <Header/>
-      <ToDoInputs addToDo = {todo => setTodos([...todos, todo])}/>
-      <ToDoList todos={todos} delToDo = {item => setTodos([...item])} />
-    </div>
-  );
+      <PostAdd addPost={post => setPosts([...posts, post])}  />
+      <PostPublish posts={posts}/>
+    </>);
 }
 
 export default App;

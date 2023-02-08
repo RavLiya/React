@@ -1,7 +1,8 @@
 export default function Header() {
-    return(
-        <h1>
-            To-Do List
-        </h1>
+    return (
+        <header className="header">
+            <h1>My Blog</h1>
+        </header>
     );
+
 }
