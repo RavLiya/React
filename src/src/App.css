@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+}
+
+.Main-dark {
+  background-color: grey;
+}
+
+.Main-light {
+  background-color: whitesmoke;
+}
